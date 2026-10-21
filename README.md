@@ -1,0 +1,1 @@
+# [CV interneto puslapis](https://ugnius-p.github.io/Skriptinio-LD/LD7/index.html)

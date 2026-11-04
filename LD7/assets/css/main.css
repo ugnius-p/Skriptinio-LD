@@ -2853,3 +2853,19 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*
+  Lenteles css
+*/
+table {
+  width: 70%;              /* Lentelė užima 70% tėvinio elemento pločio */
+  margin: 40px auto;          /* Centruoja lentelę puslapyje (nebūtina, bet gražu) */
+  border-collapse: separate; /* Būtina, kad veiktų tarpai tarp langelių */
+  border-spacing: 2px;     /* Baltų linijų storis (tarpas tarp celių) */
+  background-color: #ffffff; /* Baltas fonas sukuria „linijų“ spalvą tarp celių */
+}
+th, td {
+  padding: 12px;           /* Vidiniai tarpai tekstui */
+  background-color: var(--background-color); /* Langelių fonas (galite pasikeisti į savo spalvą) */
+  text-align: left;        /* Teksto lygiavimas */
+}

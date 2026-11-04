@@ -1,0 +1,92 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    color: red;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: 700;
+    color: green;
+}
+
+h3 {
+    font-size: large;
+    font-weight: 600;
+    color: blue;
+}
+
+h4, h5, h6 {
+    font-size: medium;
+    font-weight: 500;
+    color: yellow;
+}
+
+p {
+    font-size: small;
+    color: darkorange;
+}
+
+a:hover, button:hover {
+    text-shadow: 2px 2px 0px pink;
+    color: greenyellow;
+}
+
+a:active, button:active {
+    text-shadow: -2px -2px 0px cyan;
+    color: greenyellow;
+}
+
+section{
+    margin: 300px;
+    padding: 0px;
+}
+
+header{
+    background-image: url(https://wallpaperaccess.com/full/1858193.jpg);
+    border: 5px dashed red;
+    box-shadow: 10px 10px 5px pink;
+}
+
+#scroll-top {
+    box-shadow: -10px 0px 0px red;
+    border: 3px solid blue;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/020/980/602/original/seamless-indian-ethnic-pattern-traditional-patterned-native-american-art-it-is-a-pattern-geometric-shapes-create-beautiful-fabric-patterns-design-for-print-using-in-the-fashion-industry-vector.jpg);
+    background-size: 100%
+}
+
+ul.custom-list, ol.custom-list {
+    border: 5px dashed yellow
+}
+.custom-list .custom-list{
+    border-color: cyan;
+}
+
+/*
+  Lenteles css
+*/
+table {
+  width: 70%;              /* Lentelė užima 70% tėvinio elemento pločio */
+  margin: 40px auto;          /* Centruoja lentelę puslapyje (nebūtina, bet gražu) */
+  border-collapse: separate; /* Būtina, kad veiktų tarpai tarp langelių */
+  border-spacing: 2px;     /* Baltų linijų storis (tarpas tarp celių) */
+  background-color: #ffffff; /* Baltas fonas sukuria „linijų“ spalvą tarp celių */
+}
+th, td {
+  padding: 12px;           /* Vidiniai tarpai tekstui */
+  text-align: center;        /* Teksto lygiavimas */
+}
+
+th {
+      background-color: black;
+}
+
+tr:nth-child(odd) {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/016/122/809/original/trendy-zebra-fur-print-animal-fur-background-for-fabric-design-wrapping-paper-textile-and-wallpaper-exotic-wild-animalistic-skin-texture-free-vector.jpg)
+}
+tr:nth-child(even) {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/555/084/original/vector-leopard-brown-print.jpg)
+}

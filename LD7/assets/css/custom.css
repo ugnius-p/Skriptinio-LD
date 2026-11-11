@@ -19,10 +19,26 @@ h3 {
     color: blue;
 }
 
-h4, h5, h6 {
+h4 {
     font-size: medium;
     font-weight: 500;
     color: yellow;
+}
+
+h5 {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+    font-weight: 700;
+    color: white
+}
+
+h6 {
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    font-weight: 500;
+    color: white
 }
 
 p {
@@ -89,4 +105,58 @@ tr:nth-child(odd) {
 }
 tr:nth-child(even) {
     background-image: url(https://static.vecteezy.com/system/resources/previews/000/555/084/original/vector-leopard-brown-print.jpg)
+}
+
+.border {
+    border: 1px solid white;
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+.flex {
+    flex: 1;
+}
+.column {
+    flex-direction: column;
+}
+
+.animated-gradient {
+  background: linear-gradient(90deg, black 0%, white 100%);
+  background-size: 200% 200%;
+  animation: animated-gradient-flow 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+@keyframes animated-gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background: #4a90e2;
+  border-radius: 50%;
+  animation: size-up 5s infinite;
+}
+@keyframes size-up {
+  0% { width: 0px; height: 0px;}
+  50% { width: 50px;  height: 50px;}
+  100% { width: 150px;  height: 150px;}
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #e94e77;
+animation: spin 1s infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
 }

@@ -133,19 +133,36 @@
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    <input type="text" id="formName" name="name" class="form-control" placeholder="Name" required="">
+                  </div>
+
+                  <div class="col-md-6">
+                    <input type="text" id="formSurname" name="surname" class="form-control" placeholder="Surname" required="">
+                  </div>
+
+
+                  <div class="col-md-6 ">
+                    <input type="email" id="formEmail" class="form-control" name="email" placeholder="Your Email" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    <input type="phone" id="formPhone" class="form-control" name="phone" placeholder="Your phone number" required="">
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                    <input type="text" id="formAdress" class="form-control" name="address" placeholder="Address" required="">
                   </div>
 
                   <div class="col-12">
-                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                    <input type="number" class="form-control" id="vertinimas1" name="vertinimas1" placeholder="10" min="1" max="10" required="">Kaip vertini svetaines dizaina?</input>
+                  </div>
+
+                  <div class="col-12">
+                    <input type="number" class="form-control" id="vertinimas2" name="vertinimas2" placeholder="10" min="1" max="10" required="">Kiek yra 2*5?</input>
+                  </div>
+
+                  <div class="col-12">
+                    <input type="number" class="form-control" id="vertinimas3" name="vertinimas3" placeholder="10" min="1" max="10" required="">Kiek ?</input>
                   </div>
 
                   <div class="col-12 text-center">
@@ -153,7 +170,7 @@
                     <div class="error-message"></div>
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                    <button type="submit" class="btn">Send Message</button>
+                    <button type="submit" id="formSubmitBtn" class="btn">Send Message</button>
                   </div>
 
                 </div>
@@ -213,6 +230,8 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
+
 
 </body>
 

@@ -1,5 +1,7 @@
  const button = document.getElementById("formSubmitBtn");
 
+
+
  let duomenys = {};
 
   button.addEventListener("click", function () {
@@ -14,9 +16,25 @@
 
     console.log(duomenys)
 
-    form = button.parentElement.parentElement;
-    for (let key of Object.keys(element)){
-        console.log(key)
-    }
-    form.appendChild(result);
+    let form = button.parentElement.parentElement;
+	let output = document.createElement("div")
+	let sum = 0;
+	Object.keys(duomenys).forEach((key) => {
+		if (key.startsWith("val")) {
+			sum += +duomenys[key]
+			if(key == "val3") {
+				let p = document.createElement("p");
+				p.textContent = "vidurkis" + " : " + sum/3;
+				form.appendChild(p);
+				
+			}
+		} else {
+			let p = document.createElement("p");
+			p.textContent = key + " : " + duomenys[key];
+			form.appendChild(p);
+		}
+	});
+	form.appendChild(output)
+	console.log()
+
   });
